@@ -1,0 +1,9 @@
+D:\train\MVC\ChessResult\ChessResult.Model\bin\Release\ChessResult.Model.dll
+D:\train\MVC\ChessResult\ChessResult.Model\bin\Release\ChessResult.Model.pdb
+D:\train\MVC\ChessResult\ChessResult.Model\obj\Release\ChessResult.Model.dll
+D:\train\MVC\ChessResult\ChessResult.Model\obj\Release\ChessResult.Model.pdb
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\bin\Release\ChessResult.Model.dll
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\bin\Release\ChessResult.Model.pdb
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\obj\Release\ChessResult.Model.csprojResolveAssemblyReference.cache
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\obj\Release\ChessResult.Model.dll
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\obj\Release\ChessResult.Model.pdb

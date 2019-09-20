@@ -1,0 +1,41 @@
+﻿@using ChessResult.Web.Resource
+@model ChessResult.Web.Models.TournamentViewModel
+
+<script>
+    $('#tbPairt').on('click', 'td a', function () {
+        var url = $(this).data('request-url');
+        $.get(url, function (data) {
+            $('#content-data').html(data);
+        });
+    });
+</script>
+<h3 class="title-col">@TournamentResx.FederationParticipate</h3>
+<div id="content-data">
+    <table class="table table-striped list-progress" id="tbPairt">
+        <thead>
+            <tr>
+                <th>@TournamentResx.No</th>
+                <th>@TournamentResx.Federation</th>
+                <th>@TournamentResx.FederationFlag</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int no = 1;
+                foreach (var item in Model.FederationPaticipate)
+                {
+                    <tr>
+                        <td>@no</td>
+                        <td><a class="tour-name" data-request-url='@Url.Action("GetListPlayerInTournamentByFederation", "Player", new { tourID = Model.ID, federationID = item.ID})'>@item.Name</a></td>
+                        <td><img src="~/Assets/img/@item.Flag" alt="" class="flag"></td>
+                    </tr>
+                    no += 1;
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="content-data">
+
+</div>

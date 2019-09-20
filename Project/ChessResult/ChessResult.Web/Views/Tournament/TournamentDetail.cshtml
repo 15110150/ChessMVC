@@ -1,0 +1,72 @@
+﻿@using ChessResult.Web.Resource
+@model ChessResult.Web.Models.TournamentViewModel
+
+<div class="jumbotron tour-detail">
+    <div class="container text-center">
+        <div class="row row-inform">
+            <h4>
+                <strong>@Model.Name</strong>
+            </h4>
+            <p>@TournamentResx.Federation: @Model.Federation.Name</p>
+            <p>@TournamentResx.Location: @Model.Location</p>
+            <p>@TournamentResx.Director: @Model.Director</p>
+            <p>@TournamentResx.StartDate: @Model.StartDate.ToString("dd/MM/yyyy")</p>
+            <p>@TournamentResx.EndDate: @Model.EndDate.ToString("dd/MM/yyyy")</p>
+            <hr class="d-sm-none" />
+        </div>
+    </div>
+</div>
+<div class="wapper">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="wrapper">
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3 class="title-col">@SideBarResx.SideBarHeader</h3>
+                    </div>
+                    <ul class="list-unstyled list-menu">
+                        <li>
+                            <a id="staringRank"
+                               data-request-url="@Url.Action("StatictisPlayerInTour", "Tournament", new { id = Model.ID })"
+                               aria-expanded="false">@SideBarResx.Statistic</a>
+                        </li>
+                        @if (Model.ChildenTournament != null && Model.ChildenTournament.Count() != 0)
+                        {
+                            <li>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">@SideBarResx.TournamentForm</a>
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    @{foreach (var item in Model.ChildenTournament)
+                                        {
+                                            <li>
+                                                <a id="@item.ID"
+                                                   data-request-url="@Url.Action("GetAllRoundInTournament", "Tournament", new { id = item.ID })">
+                                                    @item.Form.Name
+                                                </a>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <a id="boardPairing"
+                                                   data-request-url="@Url.Action("GetAllRoundInTournament", "Tournament", new { id = Model.ID })"
+                                                   aria-expanded="false">@SideBarResx.BoardPairing</a>
+                                            </li>
+                                        }
+                        <li>
+                            <a id="fedeParticipate"
+                               data-request-url="@Url.Action("GetListFederationParticipate", "Tournament",  new { id = Model.ID })"
+                               aria-expanded="false">@SideBarResx.ListFederationParticipate</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-lg-9 col-sm-12" id="content-data">
+            @{Html.RenderAction("StatictisPlayerInTour", "Tournament", new { tournament = Model.ID });}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,222 @@
+﻿html {
+    height: 100%;
+}
+
+.navbar {
+    background-color: #334166;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+}
+
+.bg-register-image, .bg-login-image {
+}
+
+.bg-register-image {
+    background: url("https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-login-image {
+    background: url("https://images.unsplash.com/photo-1499649665965-2cc11230dfc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(#334166, #859cd8);
+}
+
+.jumbotron {
+    border-radius: 0;
+    background: linear-gradient(#334166, #859cd8);
+}
+
+.table {
+    margin-bottom: 30px;
+}
+
+.container-form {
+    margin-top: 30px;
+}
+
+.form-group .text-name {
+    width: 100%;
+}
+
+.btn-search {
+    margin-top: 18px;
+}
+
+.form-inline {
+    margin: 20px 0px;
+}
+
+.list-team {
+    margin-top: 50px;
+}
+
+.starting-rank {
+    margin-left: auto;
+}
+
+.row-inform {
+    display: block;
+}
+
+.title-card {
+    color: #fea850;
+}
+
+.title-form {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 25px;
+    width: 100%;
+}
+
+.list-progress {
+    margin-top: 30px;
+}
+
+.btn-fere {
+    background-color: #fff;
+    color: #000;
+    border: solid;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 150px;
+    overflow-x: hidden;
+}
+
+.nav-link:hover {
+    background: #cecfd0;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.jumbotron .jumbotron-title {
+    color: #fea850;
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.jumbotron .jumbotron-content {
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.tour-name {
+    color: #000;
+}
+
+.nav-tabs .nav-tab-link {
+    color: #000;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.flag {
+    margin-right: 5px;
+    width: 2vw;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.float-right {
+    float: right;
+}
+
+.icon-logout {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    bottom: 0;
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+}
+
+.carousel-inner img {
+    margin: auto;
+    min-height: 200px;
+    width: 100%;
+}
+
+.btn-paring {
+    background: #fff;
+    border: none;
+    color: #334166;
+}
+
+.tour-detail {
+    background: linear-gradient(#ccc, #fdfdfd);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.fas {
+    color: #000;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.wapper {
+    margin: 50px;
+}
+
+.btn-primary {
+    background: #334166;
+    border: none;
+}
+
+.title-col {
+    color: #334166;
+}
+
+.list-menu li:hover {
+    background: #f3f2f2;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tour-name {
+    cursor: pointer;
+}
+
+.list-menu li {
+    padding: 5px;
+}
+
+.list-menu li a {
+    font-size: 1.2em;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}

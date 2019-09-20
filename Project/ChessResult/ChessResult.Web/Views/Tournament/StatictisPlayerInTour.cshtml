@@ -1,0 +1,86 @@
+﻿@using ChessResult.Web.Resource
+@model ChessResult.Web.Models.TournamentViewModel
+
+<h3 class="title-col">@PlayerResx.Statistic</h3>
+@if (Model.ChildenTournament != null && Model.ChildenTournament.Count() != 0)
+{
+    foreach (var item in Model.ChildenTournament)
+    {
+        <h5>@item.Name</h5>
+        <table class="table table-striped list-progress">
+            <thead>
+                <tr>
+                    <th>@PlayerResx.No</th>
+                    <th>@PlayerResx.PlayerName</th>
+                    <th>@PlayerResx.Federation</th>
+                    <th>@PlayerResx.FederationFlag</th>
+                    <th>@PlayerResx.TotalMark</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @{
+                    int counter = 1;
+                    foreach (var child in item.StatisticPlayer)
+                    {
+                        <tr>
+                            <td>@counter</td>
+                            <td>
+                                <a id="playerInfo"
+                                   data-request-url="@Url.Action("GetPlayerByID", "Player", new { id = child.Player.PlayerID })">
+                                    @child.Player.Name
+                                </a>
+                            </td>
+                            <td><a class="tour-name">@child.Player.Federation.Name</a></td>
+                            <td><img src="~/Assets/img/@child.Player.Federation.Flag" alt="" class="flag"></td>
+                            <td>@child.TotalMark</td>
+                        </tr>
+                        counter += 1;
+                    }
+                }
+            </tbody>
+        </table>
+     }
+}
+else
+{
+      <div id='gameModal' class='modal hide fade in'>
+                            <div id='gameContainer'>
+                            </div>
+                        </div>
+      <table class="table table-striped list-progress">
+                                <thead>
+                                    <tr>
+                                        <th>@PlayerResx.No</th>
+                                        <th>@PlayerResx.PlayerName</th>
+                                        <th>@PlayerResx.Federation</th>
+                                        <th>@PlayerResx.FederationFlag</th>
+                                        <th>@PlayerResx.TotalMark</th>
+                                        <th>@PlayerResx.FideID</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int counter = 1;
+                                        foreach (var item in Model.StatisticPlayer)
+                                        {
+                                            <tr>
+                                                <td>@counter</td>
+                                                @*<td><a class="tour-name">@item.Name</a></td>*@
+                                                <td>
+                                                    <a id="playerInfo"
+                                                       data-request-url="@Url.Action("GetPlayerByID", "Player", new { id = item.Player.PlayerID })">
+                                                        @item.Player.Name
+                                                    </a>
+                                                </td>
+                                                <td><a class="tour-name">@item.Player.Federation.Name</a></td>
+                                                <td><img src="~/Assets/img/@item.Player.Federation.Flag" alt="" class="flag"></td>
+                                                <td>@item.TotalMark</td>
+                                                <td>@item.Player.FideID</td>
+                                            </tr>
+                                            counter += 1;
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+}

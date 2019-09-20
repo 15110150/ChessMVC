@@ -1,0 +1,10 @@
+D:\train\MVC\ChessResult\ChessResult.Model\bin\Debug\ChessResult.Model.dll
+D:\train\MVC\ChessResult\ChessResult.Model\bin\Debug\ChessResult.Model.pdb
+D:\train\MVC\ChessResult\ChessResult.Model\obj\Debug\ChessResult.Model.dll
+D:\train\MVC\ChessResult\ChessResult.Model\obj\Debug\ChessResult.Model.pdb
+D:\train\MVC\ChessResult\ChessResult.Model\obj\Debug\ChessResult.Model.csprojResolveAssemblyReference.cache
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\bin\Debug\ChessResult.Model.dll
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\bin\Debug\ChessResult.Model.pdb
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\obj\Debug\ChessResult.Model.dll
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\obj\Debug\ChessResult.Model.pdb
+D:\Dev-Pool\MVC\Project\ChessResult\ChessResult.Model\obj\Debug\ChessResult.Model.csprojResolveAssemblyReference.cache

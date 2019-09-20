@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="SonarQube - R&amp;D / DevPool Nexcel CSharp" ToolsVersion="14.0">
+  <Include Path="..\.sonarlint\devpoolcsharp.ruleset" Action="Default" />
+</RuleSet>

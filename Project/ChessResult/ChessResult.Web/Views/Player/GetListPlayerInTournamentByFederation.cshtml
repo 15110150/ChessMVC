@@ -1,0 +1,31 @@
+﻿@using ChessResult.Web.Resource
+@model IEnumerable<ChessResult.Web.Models.PlayerViewModel>
+
+<h3 class="title-col">@PlayerResx.Title</h3>
+<table class="table table-striped list-progress">
+    <thead>
+        <tr>
+            <th>@PlayerResx.No</th>
+            <th>@PlayerResx.PlayerName</th>
+            <th>@PlayerResx.Federation</th>
+            <th>@PlayerResx.FideID</th>
+            <th>@PlayerResx.Raking</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int no = 1;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@no</td>
+                    <td>@item.Name</td>
+                    <td><img src="~/Assets/img/@item.Federation.Flag" alt="" class="flag"></td>
+                    <td><a class="tour-name" href="http://ratings.fide.com/card.phtml?event=@item.FideID" target="_blank">@item.FideID</a></td>
+                    <td>@item.Rating</td>
+                </tr>
+                no += 1;
+            }
+        }
+    </tbody>
+</table>

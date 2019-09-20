@@ -1,0 +1,46 @@
+﻿@using ChessResult.Web.Resource
+@model ChessResult.Web.Models.TournamentFillterViewModel
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <p class="jumbotron-title">@HomeJumbotronResx.HeaderTitle</p>
+        <p class="jumbotron-content">@HomeJumbotronResx.BodyTitle</p>
+        <p>@HomeJumbotronResx.BodyContent</p>
+    </div>
+</div>
+
+<div class="container container-form">
+    <div class="row">
+        <div class="col-lg-12">
+
+            @using (Ajax.BeginForm("FilterTournament", "Tournament", new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "list-tournament" }))
+            {
+                <div class="container">
+                    <form>
+                        <div class="form-inline">
+                            <div class="form-group col-lg-4">
+                                @Html.LabelFor(model => model.Name)
+                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { placeholder = TournamentResx.NameTournament, @class = "form-control text-name" } })
+                            </div>
+                            <div class="form-group col-lg-3">
+                                @Html.LabelFor(model => model.StartDate)
+                                @Html.TextBoxFor(model => model.StartDate, new { @class = "form-control", id = "startdate-picker" })
+                            </div>
+                            <div class="form-group col-lg-3">
+                                @Html.LabelFor(model => model.FederationID)
+                                @Html.DropDownListFor(x => x.FederationID, new SelectList(ViewBag.Federations, "ID", "Name"), "Get all", new { @class = "form-control" })
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <button type="submit" class="btn btn-primary btn-search">@NavBarResx.Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            }
+
+            <div class="col-lg-12" id="list-tournament">
+                @{Html.RenderAction("FilterTournament", "Tournament", new { Name = "", FederationID = 0, StartDate = 01 - 01 - 2000 }); }
+            </div>
+        </div>
+    </div>
+</div>

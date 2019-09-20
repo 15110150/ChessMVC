@@ -1,0 +1,35 @@
+﻿@using ChessResult.Web.Resource
+@model IEnumerable<ChessResult.Web.Models.TournamentViewModel>
+
+
+<table class="table table-striped list-progress">
+    <thead>
+        <tr>
+            <th>@TournamentResx.No</th>
+            <th>@TournamentResx.NameTournament</th>
+            <th>@TournamentResx.Federation</th>
+            <th>@TournamentResx.FederationFlag</th>
+            <th>@TournamentResx.StartDate</th>
+            <th>@TournamentResx.EndDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int no = 1;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@no</td>
+                    <td><a class="tour-name" href='@Url.Action("TournamentDetail", "Tournament", new { id = item.ID})'>@item.Name</a></td>
+                    <td>@item.Federation.Acronym</td>
+                    <td><img src="~/Assets/img/@item.Federation.Flag" alt="" class="flag"></td>
+                    <td>@item.StartDate.ToString("dd/MM/yyyy")</td>
+                    <td>@item.EndDate.ToString("dd/MM/yyyy")</td>
+                </tr>
+                no += 1;
+            }
+        }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\train\MVC\Web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>09/10/2019 13:49:38</publishTime>
+    </File>
+    <File Include="App_Data/Mapping.xml">
+      <publishTime>09/19/2019 16:55:13</publishTime>
+    </File>
+    <File Include="Assets/img/Albania.png">
+      <publishTime>09/03/2019 15:48:06</publishTime>
+    </File>
+    <File Include="Assets/img/Angola.png">
+      <publishTime>09/03/2019 15:48:00</publishTime>
+    </File>
+    <File Include="Assets/img/Argentina.png">
+      <publishTime>09/03/2019 08:30:10</publishTime>
+    </File>
+    <File Include="Assets/img/Australia.png">
+      <publishTime>09/03/2019 15:48:17</publishTime>
+    </File>
+    <File Include="Assets/img/Bangladesh.png">
+      <publishTime>09/03/2019 15:48:24</publishTime>
+    </File>
+    <File Include="Assets/img/Belgium.png">
+      <publishTime>09/03/2019 15:48:30</publishTime>
+    </File>
+    <File Include="Assets/img/Bolivia.png">
+      <publishTime>09/03/2019 15:48:36</publishTime>
+    </File>
+    <File Include="Assets/img/Brazil.png">
+      <publishTime>09/03/2019 08:33:38</publishTime>
+    </File>
+    <File Include="Assets/img/Brunei.png">
+      <publishTime>09/03/2019 15:48:43</publishTime>
+    </File>
+    <File Include="Assets/img/Cambodia.png">
+      <publishTime>09/03/2019 15:48:49</publishTime>
+    </File>
+    <File Include="Assets/img/Canada.png">
+      <publishTime>09/03/2019 15:48:54</publishTime>
+    </File>
+    <File Include="Assets/img/Chile.png">
+      <publishTime>09/03/2019 15:48:59</publishTime>
+    </File>
+    <File Include="Assets/img/China.png">
+      <publishTime>09/03/2019 15:49:04</publishTime>
+    </File>
+    <File Include="Assets/img/Colombia.png">
+      <publishTime>09/03/2019 15:49:09</publishTime>
+    </File>
+    <File Include="Assets/img/Croatia.png">
+      <publishTime>09/03/2019 15:49:15</publishTime>
+    </File>
+    <File Include="Assets/img/Egypt.png">
+      <publishTime>09/03/2019 15:49:23</publishTime>
+    </File>
+    <File Include="Assets/img/France.png">
+      <publishTime>09/03/2019 15:49:34</publishTime>
+    </File>
+    <File Include="Assets/img/Georgia.png">
+      <publishTime>09/05/2019 14:36:40</publishTime>
+    </File>
+    <File Include="Assets/img/Germany.png">
+      <publishTime>09/03/2019 15:49:40</publishTime>
+    </File>
+    <File Include="Assets/img/Ghana.png">
+      <publishTime>09/03/2019 15:49:46</publishTime>
+    </File>
+    <File Include="Assets/img/India.png">
+      <publishTime>09/03/2019 15:50:09</publishTime>
+    </File>
+    <File Include="Assets/img/Iran.png">
+      <publishTime>09/03/2019 15:50:34</publishTime>
+    </File>
+    <File Include="Assets/img/Italy.png">
+      <publishTime>09/03/2019 15:50:40</publishTime>
+    </File>
+    <File Include="Assets/img/Japan.png">
+      <publishTime>09/03/2019 08:31:09</publishTime>
+    </File>
+    <File Include="Assets/img/Laos.png">
+      <publishTime>09/04/2019 09:43:34</publishTime>
+    </File>
+    <File Include="Assets/img/Malaysia.png">
+      <publishTime>09/03/2019 15:51:05</publishTime>
+    </File>
+    <File Include="Assets/img/Mexico.png">
+      <publishTime>09/03/2019 15:51:14</publishTime>
+    </File>
+    <File Include="Assets/img/Mozambique.png">
+      <publishTime>09/03/2019 15:51:21</publishTime>
+    </File>
+    <File Include="Assets/img/New-Zealand.png">
+      <publishTime>09/03/2019 15:51:30</publishTime>
+    </File>
+    <File Include="Assets/img/Palestine.png">
+      <publishTime>09/03/2019 15:51:40</publishTime>
+    </File>
+    <File Include="Assets/img/Peru.png">
+      <publishTime>09/03/2019 15:51:45</publishTime>
+    </File>
+    <File Include="Assets/img/Poland.png">
+      <publishTime>09/05/2019 14:38:48</publishTime>
+    </File>
+    <File Include="Assets/img/Russia.png">
+      <publishTime>09/05/2019 14:32:36</publishTime>
+    </File>
+    <File Include="Assets/img/South-Africa.png">
+      <publishTime>09/03/2019 15:51:55</publishTime>
+    </File>
+    <File Include="Assets/img/Switzerland.png">
+      <publishTime>09/03/2019 15:52:03</publishTime>
+    </File>
+    <File Include="Assets/img/United-Kingdom.png">
+      <publishTime>09/03/2019 15:52:12</publishTime>
+    </File>
+    <File Include="Assets/img/Vietnam.png">
+      <publishTime>09/03/2019 15:52:17</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>09/10/2019 13:49:38</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>08/15/2019 13:05:20</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>04/10/2017 15:40:32</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>12/06/2017 15:08:08</publishTime>
+    </File>
+    <File Include="bin/ChessResult.Model.dll">
+      <publishTime>09/20/2019 11:22:26</publishTime>
+    </File>
+    <File Include="bin/ChessResult.Repository.dll">
+      <publishTime>09/20/2019 11:22:26</publishTime>
+    </File>
+    <File Include="bin/ChessResult.Service.dll">
+      <publishTime>09/20/2019 11:22:26</publishTime>
+    </File>
+    <File Include="bin/ChessResult.Web.dll">
+      <publishTime>09/20/2019 12:25:28</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>07/22/2016 14:52:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Fanex.Data.dll">
+      <publishTime>06/01/2017 12:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 13:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2015 13:16:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/27/2012 13:00:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="ChessResult.Web.ruleset">
+      <publishTime>09/17/2019 14:47:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>09/19/2019 16:18:27</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>09/10/2019 13:49:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/10/2019 13:49:23</publishTime>
+    </File>
+    <File Include="img/Albania.png">
+      <publishTime>09/03/2019 15:48:06</publishTime>
+    </File>
+    <File Include="img/Angola.png">
+      <publishTime>09/03/2019 15:48:00</publishTime>
+    </File>
+    <File Include="img/Argentina.png">
+      <publishTime>09/03/2019 08:30:10</publishTime>
+    </File>
+    <File Include="img/Australia.png">
+      <publishTime>09/03/2019 15:48:17</publishTime>
+    </File>
+    <File Include="img/Bangladesh.png">
+      <publishTime>09/03/2019 15:48:24</publishTime>
+    </File>
+    <File Include="img/Belgium.png">
+      <publishTime>09/03/2019 15:48:30</publishTime>
+    </File>
+    <File Include="img/Bolivia.png">
+      <publishTime>09/03/2019 15:48:36</publishTime>
+    </File>
+    <File Include="img/Brazil.png">
+      <publishTime>09/03/2019 08:33:38</publishTime>
+    </File>
+    <File Include="img/Brunei.png">
+      <publishTime>09/03/2019 15:48:43</publishTime>
+    </File>
+    <File Include="img/Cambodia.png">
+      <publishTime>09/03/2019 15:48:49</publishTime>
+    </File>
+    <File Include="img/Canada.png">
+      <publishTime>09/03/2019 15:48:54</publishTime>
+    </File>
+    <File Include="img/Chile.png">
+      <publishTime>09/03/2019 15:48:59</publishTime>
+    </File>
+    <File Include="img/China.png">
+      <publishTime>09/03/2019 15:49:04</publishTime>
+    </File>
+    <File Include="img/Colombia.png">
+      <publishTime>09/03/2019 15:49:09</publishTime>
+    </File>
+    <File Include="img/Croatia.png">
+      <publishTime>09/03/2019 15:49:15</publishTime>
+    </File>
+    <File Include="img/Egypt.png">
+      <publishTime>09/03/2019 15:49:23</publishTime>
+    </File>
+    <File Include="img/France.png">
+      <publishTime>09/03/2019 15:49:34</publishTime>
+    </File>
+    <File Include="img/Georgia.png">
+      <publishTime>09/05/2019 14:36:40</publishTime>
+    </File>
+    <File Include="img/Germany.png">
+      <publishTime>09/03/2019 15:49:40</publishTime>
+    </File>
+    <File Include="img/Ghana.png">
+      <publishTime>09/03/2019 15:49:46</publishTime>
+    </File>
+    <File Include="img/India.png">
+      <publishTime>09/03/2019 15:50:09</publishTime>
+    </File>
+    <File Include="img/Iran.png">
+      <publishTime>09/03/2019 15:50:34</publishTime>
+    </File>
+    <File Include="img/Italy.png">
+      <publishTime>09/03/2019 15:50:40</publishTime>
+    </File>
+    <File Include="img/Japan.png">
+      <publishTime>09/03/2019 08:31:09</publishTime>
+    </File>
+    <File Include="img/Laos.png">
+      <publishTime>09/04/2019 09:43:34</publishTime>
+    </File>
+    <File Include="img/Malaysia.png">
+      <publishTime>09/03/2019 15:51:05</publishTime>
+    </File>
+    <File Include="img/Mexico.png">
+      <publishTime>09/03/2019 15:51:14</publishTime>
+    </File>
+    <File Include="img/Mozambique.png">
+      <publishTime>09/03/2019 15:51:21</publishTime>
+    </File>
+    <File Include="img/New-Zealand.png">
+      <publishTime>09/03/2019 15:51:30</publishTime>
+    </File>
+    <File Include="img/Palestine.png">
+      <publishTime>09/03/2019 15:51:40</publishTime>
+    </File>
+    <File Include="img/Peru.png">
+      <publishTime>09/03/2019 15:51:45</publishTime>
+    </File>
+    <File Include="img/Poland.png">
+      <publishTime>09/05/2019 14:38:48</publishTime>
+    </File>
+    <File Include="img/Russia.png">
+      <publishTime>09/05/2019 14:32:36</publishTime>
+    </File>
+    <File Include="img/South-Africa.png">
+      <publishTime>09/03/2019 15:51:55</publishTime>
+    </File>
+    <File Include="img/Switzerland.png">
+      <publishTime>09/03/2019 15:52:03</publishTime>
+    </File>
+    <File Include="img/United-Kingdom.png">
+      <publishTime>09/03/2019 15:52:12</publishTime>
+    </File>
+    <File Include="img/Vietnam.png">
+      <publishTime>09/03/2019 15:52:17</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/18/2019 11:21:11</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.js">
+      <publishTime>09/10/2019 13:49:38</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>09/10/2019 13:49:38</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Scripts/CRScript.js">
+      <publishTime>09/20/2019 12:23:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>09/10/2019 13:49:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.4.js">
+      <publishTime>09/11/2019 12:55:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.4.min.js">
+      <publishTime>09/11/2019 12:55:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.4.min.map">
+      <publishTime>09/11/2019 12:55:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>09/18/2019 11:21:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>09/18/2019 11:21:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.debug.js">
+      <publishTime>09/18/2019 11:00:28</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.js">
+      <publishTime>09/18/2019 11:00:27</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.debug.js">
+      <publishTime>09/18/2019 11:00:28</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.js">
+      <publishTime>09/18/2019 11:00:28</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.debug.js">
+      <publishTime>09/18/2019 11:00:28</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.js">
+      <publishTime>09/18/2019 11:00:28</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/MyScripts/script.js">
+      <publishTime>09/16/2019 09:40:55</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>09/10/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Scripts/TabScript.js">
+      <publishTime>09/20/2019 12:24:06</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>09/20/2019 12:23:49</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>09/19/2019 15:50:10</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>09/19/2019 16:01:15</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/19/2019 11:41:54</publishTime>
+    </File>
+    <File Include="Views/Pairing/ListPairingInTourRound.cshtml">
+      <publishTime>09/17/2019 15:14:08</publishTime>
+    </File>
+    <File Include="Views/Player/GetPlayerByID.cshtml">
+      <publishTime>09/18/2019 17:05:41</publishTime>
+    </File>
+    <File Include="Views/Player/StatictisPlayerInTour.cshtml">
+      <publishTime>09/11/2019 08:28:58</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/20/2019 12:25:23</publishTime>
+    </File>
+    <File Include="Views/Tournament/AddTournament.cshtml">
+      <publishTime>09/19/2019 14:03:24</publishTime>
+    </File>
+    <File Include="Views/Tournament/FilterTournament.cshtml">
+      <publishTime>09/19/2019 11:39:58</publishTime>
+    </File>
+    <File Include="Views/Tournament/GetAllRoundInTournament.cshtml">
+      <publishTime>09/20/2019 12:25:10</publishTime>
+    </File>
+    <File Include="Views/Tournament/GetAllTournament.cshtml">
+      <publishTime>09/18/2019 09:00:11</publishTime>
+    </File>
+    <File Include="Views/Tournament/GetListFederationParticipate.cshtml">
+      <publishTime>09/20/2019 11:22:24</publishTime>
+    </File>
+    <File Include="Views/Tournament/GetListTournament.cshtml">
+      <publishTime>09/10/2019 17:15:07</publishTime>
+    </File>
+    <File Include="Views/Tournament/GetTournamentsInProgress.cshtml">
+      <publishTime>09/17/2019 15:14:08</publishTime>
+    </File>
+    <File Include="Views/Tournament/StatictisPlayerInTour.cshtml">
+      <publishTime>09/19/2019 16:15:18</publishTime>
+    </File>
+    <File Include="Views/Tournament/TournamentDetail.cshtml">
+      <publishTime>09/20/2019 11:44:42</publishTime>
+    </File>
+    <File Include="Views/Tournament/TournamentManager.cshtml">
+      <publishTime>09/19/2019 10:46:09</publishTime>
+    </File>
+    <File Include="Views/Tournament/UpdateTournament.cshtml">
+      <publishTime>09/18/2019 16:49:01</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>09/10/2019 13:49:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/10/2019 13:49:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/19/2019 10:07:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

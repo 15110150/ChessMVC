@@ -1,0 +1,44 @@
+﻿@using ChessResult.Web.Resource
+@model IEnumerable<ChessResult.Web.Models.TournamentViewModel>
+
+<div class="container container-form">
+    <form method="get" action="@Url.Action("AddTournament", "Tournament")">
+        <input type="submit" class="btn btn-primary" value="Add new tournament" />
+    </form>
+
+    <table class="table table-striped list-progress">
+        <thead>
+            <tr>
+                <th>@TournamentResx.No</th>
+                <th>@TournamentResx.NameTournament</th>
+                <th>@TournamentResx.Federation</th>
+                <th>@TournamentResx.FederationFlag</th>
+                <th>@TournamentResx.StartDate</th>
+                <th>@TournamentResx.EndDate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int no = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@no</td>
+                        <td>@item.Name</td>
+                        <td>@item.Federation.Acronym</td>
+                        <td><img src="~/Assets/img/@item.Federation.Flag" alt="" class="flag"></td>
+                        <td>@item.StartDate.ToString("dd/MM/yyyy")</td>
+                        <td>@item.EndDate.ToString("dd/MM/yyyy")</td>
+                        <td><a class="tour-name" href='@Url.Action("UpdateTournament", "Tournament", new { id = item.ID})'><i class="fas fa-edit"></i></a></td>
+                        <td>
+                            <a class="tour-name" href='@Url.Action("DeleteTournament", "Tournament", new { id = item.ID})'
+                               onclick="return confirm('Are you sure to delete this tournament?')"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    no += 1;
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
